@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermatology Diagnosis Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    background-image: url("C:/Users/kunjg/OneDrive/Desktop/skin diagnosis/images/test.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 200% ;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100;
+    padding: 100;
+}
+
+
+        header {
+            background: #000; /* Change to the desired background color */
+            padding: 10px 0;
+            z-index: 12;
+            color: #fff; /* Add text color for better visibility */
+        }
+
+        .menu {
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .menu .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu ul li {
+            margin-left: 7px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            margin-top: 50px; /* Adjust as needed for spacing */
+        }
+
+        .background-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #3498db, #e74c3c, #f39c12, #3498db);
+            background-size: 400% 400%;
+            animation: gradientBackground 10s ease infinite;
+            z-index: -1;
+            border-radius: 10px;
+        }
+
+        @keyframes gradientBackground {
+            0% {
+                background-position: 100% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Dermatology Diagnosis Tool</a>
+            </div>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Info.html">Info</a></li>
+                <li><a href="Test.html">Test</a></li>
+                <li><a href="contact & Feedback.html">Contact & Feedback</a></li>
+             
+            </ul>
+        </div>
+    </header>
+
+    <!-- Dermatology Diagnosis Tool Section -->
+    <div class="container">
+        <div class="background-animation"></div>
+
+        <h1>Dermatology Diagnosis Tool</h1>
+        <form id="diagnosisForm">
+            <label for="symptoms">Symptoms:</label>
+            <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+
+            <label for="uploadImage">Upload Skin Image:</label>
+            <input type="file" id="uploadImage" name="image" accept="image/*" required>
+
+            <button type="submit">Diagnose</button>
+        </form>
+
+        <div class="result" id="diagnosisResult"></div>
+    </div>
+
+    <script>
+        const diagnosisForm = document.getElementById('diagnosisForm');
+        const diagnosisResult = document.getElementById('diagnosisResult');
+
+        diagnosisForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Here, you would add JavaScript to send the form data to your backend,
+            // where the AI model would perform the diagnosis and return the result.
+            // Then, display the result in the diagnosisResult div.
+            // This JavaScript functionality is not provided in this simplified example.
+
+            // For simplicity, we'll just display a sample result here.
+            const sampleResult = 'The preliminary diagnosis suggests a possible case of dermatitis. Consult a healthcare professional for confirmation and further advice.';
+            diagnosisResult.innerText = sampleResult;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Information</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        .main-header {
+            background-color: #4caf50;
+            padding: 10px;
+            overflow: hidden; /* Clear floats */
+            text-align: center;
+        }
+
+        .nav-header ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-header ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-header ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .main-text {
+            color: white;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        /* Disease card styles */
+        .disease-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .disease-card {
+            border: 1px solid #ddd;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .disease-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        button {
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+        /* New header styles */
+        .sub-header {
+            background-color: black;
+            padding: 10px;
+            overflow: hidden; /* Clear floats */
+            text-align: center;
+        }
+
+        .sub-header ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sub-header ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .sub-header ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header class="sub-header">
+        <nav>
+            <ul>
+              <br>
+                <li><button><a href="Home.html">Home</a></button></li>
+                <li><button><a href="About.html">About</a></button></li>
+                <li><button><a href="Info.html">Info</a></button></li>
+                <li><button><a href="Test.html">Test</a></button></li>
+                <li><button><a href="contact & Feedback.html">Contact & Feedback</a></button></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="main-header">
+        <h1 class="main-text">Dermatological Disease Information</h1>
+    </header>
+    
+   
+
+    <div class="disease-grid">
+        <!-- Disease 1 -->
+        <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Atopic Dermatitis.jpg" alt="Atopic Dermatitis " class="disease-image">
+            <h2>Atopic Dermatitis</h2>
+            <button><a href="AtopicDermatitis.html">View More Information</a></button>
+        </div>
+        <!-- Disease 2 -->
+        <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Actinic Keratosis.jpg" alt="Actinic Keratosis" class="disease-image">
+            <h2>Actinic Keratosis</h2>
+            <button><a href="ActinicKeratosis.html">View More Information</a></button>
+        </div>
+        <!-- Disease 3 -->
+        <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Benign Keratosis.jpg" alt="Benign Keratosis" class="disease-image">
+            <h2>Benign Keratosis</h2>
+            <button><a href="BenignKeratosis.html">View More Information</a></button>
+        </div>
+         <!-- Disease 4 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Dermatofibroma.jpg" alt="Dermatofibroma" class="disease-image">
+            <h2>Dermatofibroma</h2>
+            <button><a href="Dermatofibroma.html">View More Information</a></button>
+        </div>
+         <!-- Disease 5 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Scabies Lyme.jpg" alt="Scabies Lyme" class="disease-image">
+            <h2>Scabies Lyme</h2>
+            <button><a href="Scabies Lyme.html">View More Information</a></button>
+        </div>
+         <!-- Disease 6 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Melanoma.jpg" alt="Melanoma" class="disease-image">
+            <h2>Melanoma</h2>
+            <button><a href="Melanomaa.html">View More Information</a></button>
+        </div>
+         <!-- Disease 7 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Squamous Cell carcinoma.jpg" alt="Squamous Cell carcinoma" class="disease-image">
+            <h2>Squamous Cell carcinoma</h2>
+            <button><a href="SquamousCellCarcinoma.html">View More Information</a></button>
+        </div>
+         <!-- Disease 8 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Tiner Ringworm Candidiasis.jpg" alt="Tiner Ringworm Candidiasis" class="disease-image">
+            <h2>Tiner Ringworm Candidiasis</h2>
+            <button><a href="TineaRingwormCandidiasis.html">View More Information</a></button>
+        </div>
+         <!-- Disease 9 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Vascular lesions.jpg" alt="Vascular lesions" class="disease-image">
+            <h2>Vascular lesions</h2>
+            <button><a href="Vascularlesion.html">View More Information</a></button>
+        </div>
+         <!-- Disease 10 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Warts Molluscum.jpg" alt="Warts Molluscum " class="disease-image">
+            <h2>Warts Molluscum </h2>
+            <button><a href="Warts Molluscum.html">View More Information</a></button>
+        </div>
+         <!-- Disease 11 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Eczema.jpg" alt="Eczema" class="disease-image">
+            <h2>Eczema</h2>
+            <button><a href="Eczema.html">View More Information</a></button>
+        </div>
+         <!-- Disease 12 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Light Disease and Disorders of Pigmentation.jpg" alt="Light Disease and Disorders of Pigmentation" class="disease-image">
+            <h2>Light Disease and Disorders of Pigmentation</h2>
+            <button><a href="Light Disease and Disorders of Pigmentation.html">View More Information</a></button>
+        </div>
+         <!-- Disease 13 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Herpes HPV and other STDs.jpg" alt="Herpes HPV and other STDs" class="disease-image">
+            <h2>Herpes HPV and other STDs</h2>
+            <button><a href="Herpes HPV and other STDs.html">View More Information</a></button>
+        </div>
+         <!-- Disease 14 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Nail Fungus.jpg" alt="Nail Fungus" class="disease-image">
+            <h2>Nail Fungus</h2>
+            <button><a href="Nail Fungus.html">View More Information</a></button>
+        </div>
+         <!-- Disease 15-->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Lupus.jpg" alt="Lupus" class="disease-image">
+            <h2>Lupus</h2>
+            <button><a href="Lupus.html">View More Information</a></button>
+        </div>
+         <!-- Disease 16 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Bullous.jpg" alt="Bullous" class="disease-image">
+            <h2>Bullous</h2>
+            <button><a href="Bullous.html">View More Information</a></button>
+        </div>
+         <!-- Disease 17 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Acne & Rosacea.jpg" alt="Acne & Rosacea" class="disease-image">
+            <h2>Acne & Rosacea</h2>
+            <button><a href="Acne & Rosacea.html">View More Information</a></button>
+        </div>
+         <!-- Disease 18 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Poison lvy.jpg" alt="Poison lvy" class="disease-image">
+            <h2>Poison lvy</h2>
+            <button><a href="Poison lvy.html">View More Information</a></button>
+        </div>
+         <!-- Disease 19 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Seborrhic Keratoses.jpg" alt="Seborrhic Keratoses" class="disease-image">
+            <h2>Seborrhic Keratoses</h2>
+            <button><a href="Seborrhic Keratoses.html">View More Information</a></button>
+        </div>
+         <!-- Disease 20 -->
+         <div class="disease-card">
+            <img src="C:\Users\kunjg\OneDrive\Desktop\skin diagnosis\images\Urticaria Hives.jpg" alt="Urticaria Hives" class="disease-image">
+            <h2>Urticaria Hives</h2>
+            <button><a href="Urticaria Hives.html">View More Information</a></button>
+        </div>
+
+        
+
+        <!-- Add more disease cards as needed -->
+    </div>
+
+</body>
+</html>
